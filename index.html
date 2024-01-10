@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivan Delgado</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div id="header" class="container">
+      <div class="row">
+        <div id="profile-picture">
+          <img src="assets/me.jpg" />
+        </div>
+        <div id="description">
+          <h1>Ivan Delgado</h1>
+          <h2>
+            Hello! 👋 I'm a college graduate with a Bachelor's in Computer
+            Science from San Diego State University. Currently seeking
+            entry-level roles in software engineering and the tech industry. In
+            my free time, I enjoy making music.
+          </h2>
+          <div id="contact-icons">
+            <a href="https://linkedin.com/in/vndlgd"
+              ><img src="assets/linkedin-round.svg" class="icon"
+            /></a>
+            <a href="https://github.com/vndlgd"
+              ><img src="assets/cgithub.svg" class="icon"
+            /></a>
+            <a href=""
+              ><img
+                src="assets/cemail.svg"
+                id="email-icon"
+                class="icon"
+                title="Click to reveal"
+            /></a>
+            <!-- email will be displayed here  -->
+          </div>
+          <div id="email"></div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <div style="padding-bottom: 40px" id="education" class="container">
+      <div class="container-title">education</div>
+      <div class="entry row">
+        <div class="timespan">2020-2022</div>
+        <div class="timeline">
+          <div class="entry-dot"></div>
+          <img src="assets/sdsu.jpeg" />
+        </div>
+        <div class="desc">
+          <li class="nodot school">San Diego State University</li>
+          <li class="nodot degree">Bachelor of Science</li>
+          <li class="nodot major">Major in Computer Science</li>
+        </div>
+      </div>
+      <div class="entry row">
+        <div class="timespan">2018-2020</div>
+        <div class="timeline">
+          <div class="entry-dot"></div>
+          <img src="assets/swc.jpeg" />
+        </div>
+        <div class="desc">
+          <li class="nodot school">Southwestern College</li>
+          <li class="nodot degree">Associate of Science</li>
+          <li class="nodot major">Major in Computer Science</li>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding-top: 1px; padding-bottom: 40px; background-color: #eee">
+      <div id="side-projects" class="container">
+        <div class="container-title">side projects</div>
+        <div class="project">
+          <div class="project-pic"><img src="assets/todo-list.png" /></div>
+          <div class="project-description">
+            <h2>
+              <a href="https://vndlgd.github.io/todo-list/">todo-list</a>
+            </h2>
+            To-do list built with JavaScript, HTML, and CSS, utilizing the Web
+            Storage API for persistent data storage across page refreshes and
+            new windows.
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-pic"><img src="assets/tic-tac-toe.png" /></div>
+          <div class="project-description">
+            <h2>
+              <a href="https://vndlgd.github.io/tic-tac-toe/">tic-tac-toe</a>
+            </h2>
+            Tic-Tac-Toe game built with HTML, CSS, and JavaScript, enabling
+            player name customization and intuitive interface.
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-pic"><img src="assets/library.png" /></div>
+          <div class="project-description">
+            <h2>
+              <a href="https://vndlgd.github.io/library/">library</a>
+            </h2>
+            Web-based library application using HTML, CSS, and JavaScript for
+            book management with read status tracking.
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-pic"><img src="assets/calculator.png" /></div>
+          <div class="project-description">
+            <h2>
+              <a href="https://vndlgd.github.io/calculator/">calculator</a>
+            </h2>
+            Web calculator employing HTML, CSS, and JavaScript for basic
+            arithmetic.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-title">unsorted misc</div>
+      <ul>
+        <li>
+          I play in two bands: Bassist for my
+          <a
+            href="https://open.spotify.com/artist/4xCsBqQhsFzLIuuJNkoxB8?si=6X60YLC9ThKJdLJLhLmwdw"
+            >primary band</a
+          >
+          and singer/guitarist for my
+          <a
+            href="https://open.spotify.com/artist/1NOe7tVzB5o1KPJnzd7GND?si=PkN5oJ8cQJi0Ss-mZ7tiBA"
+            >side project</a
+          >
+        </li>
+        <li>
+          Highly recommend the movie
+          <a
+            href="https://www.amazon.com/Lost-Translation-Scarlett-Johansson/dp/B001NLCBJI"
+            >Lost in Translation</a
+          >.
+        </li>
+        <li>
+          My favorite band is
+          <a
+            href="https://open.spotify.com/artist/3G3Gdm0ZRAOxLrbyjfhii5?si=ZdjH2ks0Tkuhvw1KsQ09OA"
+            >My Bloody Valentine</a
+          >. If you've never listened to them, please check them out.
+        </li>
+        <li>
+          Got one of my band's songs featured on
+          <a
+            href="https://www.spin.com/2023/07/pleasure-pill-not-giving-up-interview/"
+            >SPIN</a
+          >
+        </li>
+      </ul>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <script>
+      const emailButton = document.getElementById('email-icon');
+      const emailDiv = document.getElementById('email');
+      let isEmailVisible = false;
+      emailButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        isEmailVisible ? hideEmail() : showEmail();
+      });
+
+      function showEmail() {
+        emailDiv.innerHTML = 'vndlgd98@gmail.com';
+        emailDiv.style.opacity = 1;
+        isEmailVisible = true;
+      }
+
+      function hideEmail() {
+        emailDiv.innerHTML = '';
+        emailDiv.style.opacity = 0;
+        isEmailVisible = false;
+      }
+    </script>
+  </body>
+</html>
