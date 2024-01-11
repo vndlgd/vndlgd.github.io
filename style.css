@@ -167,16 +167,15 @@ hr {
   font-style: italic;
 }
 
-/* side projects */
-#side-projects {
-  background-color: #eee;
-  grid-column: span 10;
-}
-
-.project {
+.project:not(:last-child) {
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid white;
+}
+
+.project-pic {
+  float: left;
+  margin-right: 10px;
 }
 
 .project-pic img {
@@ -186,14 +185,8 @@ hr {
   border: 1px solid #999;
 }
 
-#side-projects h2 {
-  font-weight: normal;
-  margin-bottom: 5px;
-}
-
-.project-pic {
-  float: left;
-  margin-right: 10px;
+.project-end {
+  clear: both;
 }
 
 /* unsorted misc  */
