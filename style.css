@@ -159,7 +159,8 @@ hr {
   padding-left: 0;
 }
 
-.school {
+.school,
+.skills {
   font-weight: bold;
 }
 
