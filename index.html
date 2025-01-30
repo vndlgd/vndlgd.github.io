@@ -1,205 +1,213 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ivan Delgado</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
 
-  <body>
-    <div id="header" class="container">
-      <div class="row">
-        <div id="profile-picture">
-          <img src="assets/me.jpg" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ivan Delgado</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <div id="header" class="container">
+    <div class="row">
+      <div id="profile-picture">
+        <img src="assets/me.jpg" />
+      </div>
+      <div id="description">
+        <h1>Ivan Delgado</h1>
+        <h2>
+          Hello! 👋 I’m a Computer Science graduate from San Diego State University. After graduating, I took time off
+          to pursue music, touring and recording with a band. Now, I’m focused on honing my skills in C++ and advancing
+          my journey as a Software Engineer.
+        </h2>
+        <div id="contact-icons">
+          <a href="https://linkedin.com/in/vndlgd"><img src="assets/linkedin-round.svg" class="icon" /></a>
+          <a href="https://github.com/vndlgd"><img src="assets/cgithub.svg" class="icon" /></a>
+          <a href=""><img src="assets/cemail.svg" id="email-icon" class="icon" title="Click to reveal" /></a>
+          <!-- email will be displayed here  -->
         </div>
-        <div id="description">
-          <h1>Ivan Delgado</h1>
-          <h2>
-          Hello! 👋 I’m a Computer Science graduate from San Diego State University. After graduating, I took time off to pursue music, touring and recording with a band. Now, I’m focused on honing my skills in C++ and advancing my journey as a Software Engineer.
-          </h2>
-          <div id="contact-icons">
-            <a href="https://linkedin.com/in/vndlgd"
-              ><img src="assets/linkedin-round.svg" class="icon"
-            /></a>
-            <a href="https://github.com/vndlgd"
-              ><img src="assets/cgithub.svg" class="icon"
-            /></a>
-            <a href=""
-              ><img
-                src="assets/cemail.svg"
-                id="email-icon"
-                class="icon"
-                title="Click to reveal"
-            /></a>
-            <!-- email will be displayed here  -->
-          </div>
-          <div id="email"></div>
-        </div>
+        <div id="email"></div>
       </div>
     </div>
-    <hr />
+  </div>
+  <hr />
 
-    <div style="padding-bottom: 50px" id="education" class="container">
-      <div class="container-title">education</div>
-      <div class="entry row">
-        <div class="timespan">2020-2022</div>
-        <div class="timeline">
-          <div class="entry-dot"></div>
-          <img src="assets/sdsu.jpeg" />
-        </div>
-        <div class="desc">
-          <li class="nodot school">San Diego State University</li>
-          <li class="nodot degree">Bachelor of Science</li>
-          <li class="nodot major">Major in Computer Science</li>
-        </div>
+  <div style="padding-bottom: 50px" id="education" class="container">
+    <div class="entry row">
+      <div class="timespan">2025-Present</div>
+      <div class="timeline">
+        <div class="entry-dot"></div>
+        <img src="assets/kitu-systems.jpg" />
       </div>
-      <div class="entry row">
-        <div class="timespan">2018-2020</div>
-        <div class="timeline">
-          <div class="entry-dot"></div>
-          <img src="assets/swc.jpeg" />
-        </div>
-        <div class="desc">
-          <li class="nodot school">Southwestern College</li>
-          <li class="nodot degree">Associate of Science</li>
-          <li class="nodot major">Major in Computer Science</li>
-        </div>
+      <div class="desc">
+        <li class="nodot school">Kitu Systems</li>
+        <li class="nodot degree">Software Quality Assurance Intern</li>
+        <li class="nodot major"></li>
       </div>
     </div>
-
-    <div style="padding-top: 1px; padding-bottom: 40px; background-color: #eee">
-      <div id="side-projects" class="container">
-        <div class="container-title">pet projects</div>
-
-        <div class="project">
-          <div class="project-pic"><img src="assets/weather-app.png" /></div>
-          <div class="project-description">
-            <a href="https://vndlgd.github.io/weather-app/">weather-app</a>
-            is a dynamic weather forecast site created using JavaScript and the
-            WeatherAPI. Users can search for specific locations and toggle
-            between Fahrenheit and Celsius to view detailed weather data. The
-            site changes its appearance based on weather conditions, enhancing
-            the user experience with background color changes and
-            weather-related images. By utilizing promises and async/await, the
-            app delivers accurate and real-time weather information.
-          </div>
-          <div class="project-end"></div>
-        </div>
-
-        <div class="project">
-          <div class="project-pic"><img src="assets/todo-list.png" /></div>
-          <div class="project-description">
-            <a href="https://vndlgd.github.io/todo-list/">todo-list</a>
-            is a dynamic task organizer with projects and todos. This project,
-            developed with HTML, CSS, and JavaScript, allows users to create,
-            organize, and customize tasks. The Web Storage API ensures
-            persistence, and the intuitive UI enhances efficient task
-            management.
-          </div>
-          <div class="project-end"></div>
-        </div>
-
-        <div class="project">
-          <div class="project-pic"><img src="assets/tic-tac-toe.png" /></div>
-          <div class="project-description">
-            <a href="https://vndlgd.github.io/tic-tac-toe/">tic-tac-toe</a>
-            is a classic game implemented using HTML, CSS, and JavaScript. The
-            project focuses on encapsulating game logic within modular objects,
-            minimizing global code. Players can engage in console-based
-            gameplay, and the display/DOM logic is handled separately for a
-            clean and organized structure.
-          </div>
-          <div class="project-end"></div>
-        </div>
-
-        <div class="project">
-          <div class="project-pic"><img src="assets/calculator.png" /></div>
-          <div class="project-description">
-            <a href="https://vndlgd.github.io/calculator/">calculator</a>
-            is an on-screen calculator that integrates HTML, CSS, and
-            JavaScript. It handles basic math operations, allowing users to
-            perform calculations with ease. The intuitive UI includes features
-            like a clear button, support for floating-point numbers, and
-            additional UI improvements for a seamless user experience.
-          </div>
-          <div class="project-end"></div>
-        </div>
+    <div class="entry row">
+      <div class="timespan">2024-2025</div>
+      <div class="timeline">
+        <div class="entry-dot"></div>
+        <img src="assets/aes-logo.jpg" />
+      </div>
+      <div class="desc">
+        <li class="nodot school">AES Corporation</li>
+        <li class="nodot degree">Contract Software Engineer</li>
+        <li class="nodot major">Developed and tested software for industrial leak testing systems, ensuring reliability
+          through debugging, refactoring, and rigorous validation processes.</li>
       </div>
     </div>
-
-    <div class="container">
-      <div class="container-title">unsorted misc</div>
-      <ul>
-        <li>
-          My favorite movie is
-          <a
-            href="https://www.amazon.com/Lost-Translation-Scarlett-Johansson/dp/B001NLCBJI"
-            >Lost in Translation</a
-          >.
-        </li>
-        <li>
-          I love <a href="https://en.wikipedia.org/wiki/Shoegaze">shoegaze</a>,
-          my favorite bands are
-          <a
-            href="https://open.spotify.com/artist/3G3Gdm0ZRAOxLrbyjfhii5?si=ZdjH2ks0Tkuhvw1KsQ09OA"
-            >My Bloody Valentine</a
-          >
-          and
-          <a
-            href="https://open.spotify.com/artist/0utS63XytOEVN1EtzWhJpG?si=TPUa_jhzQQ25GP3fG7gYRA&nd=1&dlsi=ddbfaa9fa35641af"
-            >The Radio Dept.</a
-          >
-        </li>
-        <li>
-          I play in two bands:
-          <a href="https://open.spotify.com/artist/4xCsBqQhsFzLIuuJNkoxB8"
-            >Pleasure Pill</a
-          >
-          and
-          <a href="https://open.spotify.com/artist/1NOe7tVzB5o1KPJnzd7GND"
-            >Big Blue World</a
-          >
-        </li>
-        <li>
-          Page design borrowed from
-          <a href="https://karpathy.ai/">Andrej Karpathy's website</a>, with
-          appreciation for his minimalistic genius. 👀
-        </li>
-        <li>
-          0 frameworks were used to make this simple responsive website—just
-          keeping it lightweight and avoiding those bloated
-          <a href="https://motherfuckingwebsite.com/">500-pound websites</a>.
-        </li>
-      </ul>
+    <div class="entry row">
+      <div class="timespan">2020-2022</div>
+      <div class="timeline">
+        <div class="entry-dot"></div>
+        <img src="assets/sdsu.jpeg" />
+      </div>
+      <div class="desc">
+        <li class="nodot school">San Diego State University</li>
+        <li class="nodot degree">Bachelor of Science</li>
+        <li class="nodot major">Major in Computer Science</li>
+      </div>
     </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <script>
-      const emailButton = document.getElementById('email-icon');
-      const emailDiv = document.getElementById('email');
-      let isEmailVisible = false;
-      emailButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        isEmailVisible ? hideEmail() : showEmail();
-      });
+    <div class="entry row">
+      <div class="timespan">2018-2020</div>
+      <div class="timeline">
+        <div class="entry-dot"></div>
+        <img src="assets/swc.jpeg" />
+      </div>
+      <div class="desc">
+        <li class="nodot school">Southwestern College</li>
+        <li class="nodot degree">Associate of Science</li>
+        <li class="nodot major">Major in Computer Science</li>
+      </div>
+    </div>
+  </div>
 
-      function showEmail() {
-        emailDiv.innerHTML = 'vndlgd98@gmail.com';
-        emailDiv.style.opacity = 1;
-        isEmailVisible = true;
-      }
+  <div style="padding-top: 1px; padding-bottom: 40px; background-color: #eee">
+    <div id="side-projects" class="container">
+      <div class="container-title">pet projects</div>
 
-      function hideEmail() {
-        emailDiv.innerHTML = '';
-        emailDiv.style.opacity = 0;
-        isEmailVisible = false;
-      }
-    </script>
-  </body>
+      <div class="project">
+        <div class="project-pic"><img src="assets/weather-app.png" /></div>
+        <div class="project-description">
+          <a href="https://vndlgd.github.io/weather-app/">weather-app</a>
+          is a dynamic weather forecast site created using JavaScript and the
+          WeatherAPI. Users can search for specific locations and toggle
+          between Fahrenheit and Celsius to view detailed weather data. The
+          site changes its appearance based on weather conditions, enhancing
+          the user experience with background color changes and
+          weather-related images. By utilizing promises and async/await, the
+          app delivers accurate and real-time weather information.
+        </div>
+        <div class="project-end"></div>
+      </div>
+
+      <div class="project">
+        <div class="project-pic"><img src="assets/todo-list.png" /></div>
+        <div class="project-description">
+          <a href="https://vndlgd.github.io/todo-list/">todo-list</a>
+          is a dynamic task organizer with projects and todos. This project,
+          developed with HTML, CSS, and JavaScript, allows users to create,
+          organize, and customize tasks. The Web Storage API ensures
+          persistence, and the intuitive UI enhances efficient task
+          management.
+        </div>
+        <div class="project-end"></div>
+      </div>
+
+      <div class="project">
+        <div class="project-pic"><img src="assets/tic-tac-toe.png" /></div>
+        <div class="project-description">
+          <a href="https://vndlgd.github.io/tic-tac-toe/">tic-tac-toe</a>
+          is a classic game implemented using HTML, CSS, and JavaScript. The
+          project focuses on encapsulating game logic within modular objects,
+          minimizing global code. Players can engage in console-based
+          gameplay, and the display/DOM logic is handled separately for a
+          clean and organized structure.
+        </div>
+        <div class="project-end"></div>
+      </div>
+
+      <div class="project">
+        <div class="project-pic"><img src="assets/calculator.png" /></div>
+        <div class="project-description">
+          <a href="https://vndlgd.github.io/calculator/">calculator</a>
+          is an on-screen calculator that integrates HTML, CSS, and
+          JavaScript. It handles basic math operations, allowing users to
+          perform calculations with ease. The intuitive UI includes features
+          like a clear button, support for floating-point numbers, and
+          additional UI improvements for a seamless user experience.
+        </div>
+        <div class="project-end"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="container-title">unsorted misc</div>
+    <ul>
+      <li>
+        My favorite movie is
+        <a href="https://www.amazon.com/Lost-Translation-Scarlett-Johansson/dp/B001NLCBJI">Lost in Translation</a>.
+      </li>
+      <li>
+        I love <a href="https://en.wikipedia.org/wiki/Shoegaze">shoegaze</a>,
+        my favorite bands are
+        <a href="https://open.spotify.com/artist/3G3Gdm0ZRAOxLrbyjfhii5?si=ZdjH2ks0Tkuhvw1KsQ09OA">My Bloody
+          Valentine</a>
+        and
+        <a
+          href="https://open.spotify.com/artist/0utS63XytOEVN1EtzWhJpG?si=TPUa_jhzQQ25GP3fG7gYRA&nd=1&dlsi=ddbfaa9fa35641af">The
+          Radio Dept.</a>
+      </li>
+      <li>
+        I play in two bands:
+        <a href="https://open.spotify.com/artist/4xCsBqQhsFzLIuuJNkoxB8">Pleasure Pill</a>
+        and
+        <a href="https://open.spotify.com/artist/1NOe7tVzB5o1KPJnzd7GND">Big Blue World</a>
+      </li>
+      <li>
+        Page design borrowed from
+        <a href="https://karpathy.ai/">Andrej Karpathy's website</a>, with
+        appreciation for his minimalistic genius. 👀
+      </li>
+      <li>
+        0 frameworks were used to make this simple responsive website—just
+        keeping it lightweight and avoiding those bloated
+        <a href="https://motherfuckingwebsite.com/">500-pound websites</a>.
+      </li>
+    </ul>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <script>
+    const emailButton = document.getElementById('email-icon');
+    const emailDiv = document.getElementById('email');
+    let isEmailVisible = false;
+    emailButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      isEmailVisible ? hideEmail() : showEmail();
+    });
+
+    function showEmail() {
+      emailDiv.innerHTML = 'vndlgd98@gmail.com';
+      emailDiv.style.opacity = 1;
+      isEmailVisible = true;
+    }
+
+    function hideEmail() {
+      emailDiv.innerHTML = '';
+      emailDiv.style.opacity = 0;
+      isEmailVisible = false;
+    }
+  </script>
+</body>
+
 </html>
