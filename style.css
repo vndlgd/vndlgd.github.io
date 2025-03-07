@@ -17,11 +17,13 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
+
 .row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -42,28 +44,33 @@ body {
 #description {
   grid-column: span 6;
 }
+
 @media (min-width: 991px) {
   #profile-picture {
     padding-right: 20px;
   }
 }
+
 @media (max-width: 991px) {
   #profile-picture {
     grid-column: span 12;
     text-align: center;
   }
+
   #description {
     grid-column: span 12;
     padding-top: 20px;
     text-align: center;
   }
 }
+
 h1 {
   font-size: 34px;
   font-weight: normal;
   padding: 0;
   margin: 0;
 }
+
 #header h2 {
   font-weight: normal;
   font-style: italic;
@@ -72,6 +79,7 @@ h1 {
   padding: 0;
   margin: 5px 0 10px 0;
 }
+
 @media (min-width: 992px) {
   h2 {
     max-width: 300px;
@@ -98,12 +106,10 @@ h1 {
 
 hr {
   height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0)
-  );
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0));
   margin: 20px 0;
   border: 0;
 }
@@ -159,12 +165,12 @@ hr {
   padding-left: 0;
 }
 
-.school,
+.title,
 .skills {
   font-weight: bold;
 }
 
-.degree {
+.subheading {
   font-style: italic;
 }
 
