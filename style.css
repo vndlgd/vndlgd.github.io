@@ -43,6 +43,8 @@ body {
 /* Description in the header */
 #description {
   grid-column: span 6;
+  position: relative;
+  top: 20px;
 }
 
 @media (min-width: 991px) {
